@@ -1,0 +1,36 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .elzero-lines {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+    width: 600px;
+    border: 5px solid red;
+    outline: 5px solid blue;
+    z-index: 2;
+  }
+  
+  .elzero-lines::before {
+    content: "";
+    position: absolute;
+    height: 70px;
+    width: 620px;
+    border: 5px solid green;
+    outline: 5px solid black;
+    z-index: 1;
+  }
+  
