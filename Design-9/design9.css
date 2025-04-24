@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EEEEEE;
+}
+
+table {
+    background-color: white;
+    width: 60%; /* Increase table width */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 20px; /* Increase padding for larger cells */
+    text-align: center;
+}
+
+td:hover {
+    color: #48A7F3;
+    border-color: #48A7F3;
+}
