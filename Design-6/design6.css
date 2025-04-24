@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    gap: 10px;
+    height: 100vh;
+    font-family: Arial, sans-serif; 
+}
+
+a {
+    margin-left: 32.5%;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #2196F3;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+a::before {
+    color: white;
+    font-weight: bold;
+    content: "This is a link";
+}
+
+body > :first-child::before {
+    content: "Name: Google | URL: https://google.com";
+}
+
+body > :nth-child(2)::before {
+    content: "Name: Elzero Academy | URL: https://elzero.org/";
+}
+
+body > :last-child::before {
+    content: "Name: Elzero Courses | URL: https://www.elzero.courses/"
+}
