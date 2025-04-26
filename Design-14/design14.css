@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EEEEEE;
+}
+
+ul {
+    padding: 0px;
+    width: fit-content;
+    counter-reset: count 10;
+    width: 500px;
+    list-style: none;
+    background-color: #FFFFFF;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #CCCCCC;
+    counter-increment: count 3;
+}
+
+li::before {
+    display: flex;
+    content: "("counter(count)")";
+    order: 2;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+li:nth-child(odd)::before {
+    background-color: #9C27B0; /* Purple for odd */
+  }
+  
+  li:nth-child(even)::before {
+    background-color: #F44336; /* Red for even */
+  }
