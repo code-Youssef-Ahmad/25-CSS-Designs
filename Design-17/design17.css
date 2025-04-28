@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EEEEEE;
+}
+
+.container {
+    background-color: #FFFFFF;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    width: 1000px;
+}
+
+div div {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: space-evenly;
+    gap: 10px;
+    width: 100%;
+}
+
+.title {
+    color: #808290;
+}
+
+.amount {
+    font-weight: bold;
+}
+
+.borderone {
+    margin-bottom: 10px;
+    position: relative;
+    height: 5px;
+    width: 100%;
+    background-image: linear-gradient(to right,#0075FD 80%, white 80%);
+}
+
+.borderone::before {
+    color: white;
+    content: "80%";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    padding: 3px;
+    background-color: #0075FD;
+    border-radius: 10px;
+    left: 80%;
+    transform: translate(-50%, -150%);
+}
+
+.borderone::after {
+    content: "";
+    border: 10px solid transparent;
+    border-top-color: #0075FD;
+    position: absolute;
+    left: 80%;
+    transform: translate(-50%, -100%);
+}
+
+.bordertwo {
+    margin-bottom: 10px;
+    position: relative;
+    height: 5px;
+    width: 100%;
+    background-image: linear-gradient(to right,#F89D0E 55%, white 55%);
+}
+
+.bordertwo::before {
+    color: white;
+    content: "55%";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    padding: 3px;
+    background-color: #F89D0E;
+    border-radius: 10px;
+    left: 55%;
+    transform: translate(-50%, -150%);
+}
+
+.bordertwo::after {
+    content: "";
+    border: 10px solid transparent;
+    border-top-color: #F89D0E;
+    position: absolute;
+    left: 55%;
+    transform: translate(-50%, -100%);
+}
+
+.borderthree {
+    margin-bottom: 10px;
+    position: relative;
+    height: 5px;
+    width: 100%;
+    background-image: linear-gradient(to right,#25C460 75%, white 75%);
+}
+
+.borderthree::before {
+    color: white;
+    content: "75%";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    padding: 3px;
+    background-color: #25C460;
+    border-radius: 10px;
+    left: 75%;
+    transform: translate(-50%, -150%);
+}
+
+.borderthree::after {
+    content: "";
+    border: 10px solid transparent;
+    border-top-color: #25C460;
+    position: absolute;
+    left: 75%;
+    transform: translate(-50%, -100%);
+}
